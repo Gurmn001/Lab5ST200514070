@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab5st200514070.MobileView">
+   <children>
+      <VBox layoutX="-10.0" layoutY="30.0" spacing="50.0">
+         <children>
+            <ImageView fitHeight="326.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/apple-14-blue-pos1.png" />
+               </image>
+            </ImageView>
+            <HBox spacing="150.0">
+               <children>
+                  <RadioButton contentDisplay="CENTER" mnemonicParsing="false" onAction="#Iphone" prefHeight="18.0" prefWidth="62.0" text="Iphone" />
+                  <RadioButton mnemonicParsing="false" onAction="#Pixel" text="Pixel" />
+                  <RadioButton mnemonicParsing="false" onAction="#samsungGalaxy" text="Samasung Galaxy" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="344.0" layoutY="93.0" prefHeight="144.0" prefWidth="234.0" text="MODEL:  Iphone 14">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
